@@ -242,9 +242,9 @@
 	            hr.style.borderTopWidth="4px";
 	            hr.style.borderTopStyle="solid";
 	            hr.style.borderTopColor="white";
-	
-	        insertBefore(dd,sel);
-	        insertBefore(hr,sel);
+	        var sel1=document.querySelector(".psb");
+	        insertAfter(dd,sel1);
+	        insertAfter(hr,sel1);
 	    }       
 
     $("#dd-buttonID").click(function () {
@@ -292,11 +292,11 @@
 	})
     if(autoHide=="yes"){
 	    setTimeout(function() {
-        $('.psb').fadeOut('fast');
+        $(".psb").hide();
         }, autoHideTime);
     }
 
-$("body").append("<style>.dd-button { position: absolute; content: ''; width: 13px; height: 13px; border-top: 3px solid #444; border-right: 3px solid #444; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 2px; left: 8px; top: 10px; transition:0.3s ease; border-color:white;}.dd-main { border: 2px solid #666;width: 34px;height: 34px;position: relative;border-radius: 100%;box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;border-color: white;margin: 0vh auto 0;margin-bottom: -18px;margin-top: -18px;z-index: 2;background: #464343;}.dd-button.down { -moz-transform:rotate(135deg); -webkit-transform:rotate(135deg); transform:rotate(135deg); top: 11px; } #close {float:right;display:inline-block;padding:5px 10px; color:white;}#close:hover {float:right;display:inline-block;padding:2px 5px;color:#fff; cursor: pointer;}#bannerBtn1{margin-left:20px;} @media only screen and (max-width: 638px){ #bannerBtn1{margin-left:0px;}}</style>");
+$("body").append("<style>.dd-button { position: absolute; content: ''; width: 13px; height: 13px; border-top: 3px solid #444; border-right: 3px solid #444; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 2px; left: 8px; top: 10px; transition:0.3s ease; border-color:white;}.dd-main { border: 2px solid #666;width: 34px;height: 34px;position: relative;border-radius: 100%;box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;border-color: white;margin: 0vh auto 0;margin-bottom: -18px;margin-top: -18px;z-index: 2;background: #464343;}.dd-button.down { -moz-transform:rotate(135deg); -webkit-transform:rotate(135deg); transform:rotate(135deg); top: 11px; } #close {float:right;display:inline-block;padding:5px 10px; color:white;}#close:hover {float:right;display:inline-block;color:#fff; cursor: pointer;}#bannerBtn1{margin-left:20px;} @media only screen and (max-width: 638px){ #bannerBtn1{margin-left:0px;}}</style>");
 	
     clearInterval(imginsert)
 }
@@ -304,5 +304,3 @@ $("body").append("<style>.dd-button { position: absolute; content: ''; width: 13
       }
       catch(e){}
   })();
-  
- 
