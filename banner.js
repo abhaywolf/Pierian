@@ -7,7 +7,7 @@
 	
 	    var insertPosition="before";//before/after
 	
-        var imgUrl="";// image url of banner  https://cdn.pixabay.com/photo/2015/11/10/08/31/banner-1036483__340.jpg
+            var imgUrl="";// image url of banner  https://cdn.pixabay.com/photo/2015/11/10/08/31/banner-1036483__340.jpg
 	    var backgroundColor="#464343";
 	
 	    var autoHide=""; //type yes to activate auto hide
@@ -20,7 +20,7 @@
 	    var collapseButtonImageUrl="https://icon-library.com/images/up-icon-png/up-icon-png-4.jpg";//https://icon-library.com/images/up-icon-png/up-icon-png-4.jpg
 	    var thinLine="yes";
 	    
-		var SingleCTA=""; //type "none" to show  
+            var SingleCTA=""; //type "none" to show 2 buttons  
 	
 	    
 		
@@ -28,21 +28,21 @@
 		
 		
 		
-		var banner = document.createElement("div");																												
+	    var banner = document.createElement("div");																												
             banner.className="psb";
             banner.style.width="100%";
-	        banner.style.display="block";
+	    banner.style.display="block";
 	
-	//uncomment below line to show image as background of banner
+	    //uncomment below line to show image as background of banner
 	    if(imgUrl==""){
-	//banner.style.backgroundImage= "url('"+imgUrl+"')";
+	    //banner.style.backgroundImage= "url('"+imgUrl+"')";
 	    }
 	    else{
 	        banner.style.backgroundColor=backgroundColor;
-	        }
+	    }
 	
 	 
-	//border style
+	    //border style
 	        //Right Border 
 	        banner.style.borderRightWidth= "3px";
 	        banner.style.borderRightStyle="solid";
@@ -60,7 +60,7 @@
 	        
 			//Top Border
 	        banner.style.borderTopWidth= "3px";
-            banner.style.borderTopStyle="solid";
+                banner.style.borderTopStyle="solid";
 	        banner.style.borderTopColor="white";
    
 	        banner.style.backgroundColor=backgroundColor;
@@ -78,7 +78,7 @@
 	    //44
 	    var description=document.createElement("div");
 	        description.innerHTML="Samsung Galaxy S10 mit dem Red S 10 GB";//max length should be 44
-            description.style.textAlign="center";
+                description.style.textAlign="center";
 	        description.style.fontSize= "30px";
 	        description.style.padding= "0px 10px 5px";
 	        description.style.color="white";
@@ -99,9 +99,9 @@
 	        btn_S1.setAttribute("target", "_blank");
 	        btn_S1.innerHTML="Check Offer";
 	        btn_S1.style.fontFamily= "Vodafone";
-            btn_S1.style.color= "white";
+                btn_S1.style.color= "white";
 	        btn_S1.style.textDecoration= "none";
-            btn_S1.style.fontSize= "18px";
+                btn_S1.style.fontSize= "18px";
 	        btn.appendChild(btn_S1);
 
 	//Button2 Element
@@ -117,9 +117,9 @@
 	        btn_S2.setAttribute("target", "_blank");
 	        btn_S2.innerHTML="Close Offer";
 	        btn_S2.style.fontFamily= "Vodafone";
-            btn_S2.style.color= "white";
+                btn_S2.style.color= "white";
 	        btn_S2.style.textDecoration= "none";
-            btn_S2.style.fontSize= "18px";
+                btn_S2.style.fontSize= "18px";
 	        btn2.appendChild(btn_S2);
 	
 	
@@ -144,7 +144,7 @@
 	
 	    if (closeButtonImageUrl==""){
 	        closeBtn.innerHTML="x";
-            closeBtn.style.fontSize= "25px";
+                closeBtn.style.fontSize= "25px";
 	    }
 	    else{
 	        var closeImage=document.createElement("img");
@@ -163,47 +163,47 @@
 		        dd.id="dd-mainID";
 			
 		    var ddbtn=document.createElement("div");
-                ddbtn.className="dd-button";
+                        ddbtn.className="dd-button";
 		        ddbtn.id="dd-buttonID";
 		
 		
-		    dd.appendChild(ddbtn);
+		        dd.appendChild(ddbtn);
 	        }
 	        else
 	        {
-	     	    dd.className="dd-main1";
-			    dd.id="dd-mainID";
-			    dd.style.width="34px";
-			    dd.style.position="relative";		
-			    dd.style.margin="0vh auto 0";
-			    dd.style.marginBottom= "-18px";
-                dd.style.marginTop= "-18px";       
-			    dd.style.zIndex= "2";
-			var ddbtnn=document.createElement("div");
+	     	         dd.className="dd-main1";
+			 dd.id="dd-mainID";
+			 dd.style.width="34px";
+			 dd.style.position="relative";		
+			 dd.style.margin="0vh auto 0";
+			 dd.style.marginBottom= "-18px";
+                         dd.style.marginTop= "-18px";       
+			 dd.style.zIndex= "2";
+		     var ddbtnn=document.createElement("div");
 			//ddbtnn.className="dd-button";
-			    ddbtnn.id="dd-buttonID";
-	        var ddImage=document.createElement("img");
-	            ddImage.className="downImg";
-	            ddImage.setAttribute("src",collapseButtonImageUrl);
-	            ddImage.style.width="30px";
-	            ddImage.style.height="30px";
-	            ddbtnn.appendChild(ddImage);
-	        dd.appendChild(ddbtnn);
+			 ddbtnn.id="dd-buttonID";
+	             var ddImage=document.createElement("img");
+	                 ddImage.className="downImg";
+	                 ddImage.setAttribute("src",collapseButtonImageUrl);
+	                 ddImage.style.width="30px";
+	                 ddImage.style.height="30px";
+	                 ddbtnn.appendChild(ddImage);
+	                 dd.appendChild(ddbtnn);
 			
 	        }
     
 	
 	    // Append all the element in the banner element
 	    //check point for close Button
-		if(closeButton=="yes"){
+	    if(closeButton=="yes"){
 	        banner.appendChild(closeBtn);
 	    }
 	
-        banner.appendChild(heading);
+            banner.appendChild(heading);
 	
 	    description.appendChild(btn);
 	    
-		// check point for Single Cta
+	    // check point for Single Cta
 	    if(SingleCTA=="none"){
 	        description.appendChild(btn2);
 	    }
@@ -219,12 +219,12 @@
 	
 	    
 	    function insertAfter(newNode, existingNode) {
-            existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
-        }
+               existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+            }
 	
 	    function insertBefore(newNode, existingNode) {
-            existingNode.parentNode.insertBefore(newNode, existingNode);
-        }
+               existingNode.parentNode.insertBefore(newNode, existingNode);
+            }
 
         if (insertPosition=="before"){
 	        insertBefore(banner,sel);
@@ -248,19 +248,19 @@
 	    }       
 
     $("#dd-buttonID").click(function () {
-	    if(collapseButtonImageUrl ==""){
+	if(collapseButtonImageUrl ==""){
             if($(".psb").css("display")=="block"){
                 $(".psb").hide();
                 if(thinLine==""){
 	                $("#horizontalLine").hide();
 	                $("#dd-mainID").hide();
-	            }
+	        }
 	
                 $(this).toggleClass("down");
             }
             else{
 	            $(".psb").css("display","block")
-                $(this).toggleClass("down");
+                    $(this).toggleClass("down");
                 }	
         }
 
@@ -270,9 +270,9 @@
                 if(thinLine==""){
 	                $("#horizontalLine").hide();
 	                $("#dd-mainID").hide();
-	            }
-	            $("#dd-mainID").css("top","12px");
-	            $(".downImg").css( "transform", "scaleY(-1)");
+	        }
+	        $("#dd-mainID").css("top","12px");
+	        $(".downImg").css( "transform", "scaleY(-1)");
             }
             else{
 	            $(".psb").css("display","block")
