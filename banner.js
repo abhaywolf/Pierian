@@ -14,10 +14,10 @@
 	    var autoHideTime=3000;
 	
 	    var closeButton="yes";	// type yes to activate close Button
-	    var closeButtonImageUrl="http://res.freestockphotos.biz/pictures/15/15107-illustration-of-a-red-close-button-pv.png";
+	    var closeButtonImageUrl="https://iili.io/2zu8Zl.md.png";
 	
 	    var collapseButton="yes"; // type yes to activate collapse Button
-	    var collapseButtonImageUrl="https://icon-library.com/images/up-icon-png/up-icon-png-4.jpg";//https://icon-library.com/images/up-icon-png/up-icon-png-4.jpg
+	    var collapseButtonImageUrl="https://i.imgur.com/KqHD37h.png";
 	    var thinLine="yes";
 	    
             var SingleCTA=""; //type "none" to show 2 buttons  
@@ -93,7 +93,7 @@
 	        btn.id="bannerBtn1";
 	//btn.style.marginLeft= "0px";
 	        btn.style.borderRadius= "0px";
-	        btn.style.backgroundColor="red"
+	        btn.style.backgroundColor="#9c2aa0"
 	    var btn_S1=document.createElement("A");
 	        btn_S1.setAttribute("href", "");
 	        btn_S1.setAttribute("target", "_blank");
@@ -111,13 +111,13 @@
 	        btn2.id="bannerBtn1";
 	//btn2.style.marginLeft= "0px";
 	        btn2.style.borderRadius= "0px";
-	        btn2.style.backgroundColor="blue";
+	        btn2.style.backgroundColor="white";
 	    var btn_S2=document.createElement("A");
 	        btn_S2.setAttribute("href", "");
 	        btn_S2.setAttribute("target", "_blank");
 	        btn_S2.innerHTML="Close Offer";
 	        btn_S2.style.fontFamily= "Vodafone";
-                btn_S2.style.color= "white";
+                btn_S2.style.color= "black";
 	        btn_S2.style.textDecoration= "none";
                 btn_S2.style.fontSize= "18px";
 	        btn2.appendChild(btn_S2);
@@ -126,9 +126,9 @@
 	
 	
         //subheading Element
-	    var subheading1="anbbbgggdddl";
-	    var subheading2="ahababjajajm";
-	    var subheading3="akakakakkaka";
+	    var subheading1="Offer 1";
+	    var subheading2="Offer 2";
+	    var subheading3="Offer 3";
 	
 	
 	    var lnk= document.createElement("div")
@@ -150,8 +150,8 @@
 	        var closeImage=document.createElement("img");
 	            closeImage.className="manImg";
 	            closeImage.setAttribute("src",closeButtonImageUrl);
-	            closeImage.style.width="30px";
-	            closeImage.style.height="30px";
+	            closeImage.style.width="20px";
+	            closeImage.style.height="20px";
 	            closeBtn.appendChild(closeImage);
 	    }
 	
@@ -185,8 +185,8 @@
 	             var ddImage=document.createElement("img");
 	                 ddImage.className="downImg";
 	                 ddImage.setAttribute("src",collapseButtonImageUrl);
-	                 ddImage.style.width="30px";
-	                 ddImage.style.height="30px";
+	                 ddImage.style.width="35px";
+	                 ddImage.style.height="35px";
 	                 ddbtnn.appendChild(ddImage);
 	                 dd.appendChild(ddbtnn);
 			
@@ -296,7 +296,7 @@
         }, autoHideTime);
     }
 
-$("body").append("<style>.dd-button { position: absolute; content: ''; width: 13px; height: 13px; border-top: 3px solid #444; border-right: 3px solid #444; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 2px; left: 8px; top: 10px; transition:0.3s ease; border-color:white;}.dd-main { border: 2px solid #666;width: 34px;height: 34px;position: relative;border-radius: 100%;box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;border-color: white;margin: 0vh auto 0;margin-bottom: -18px;margin-top: -18px;z-index: 2;background: #464343;}.dd-button.down { -moz-transform:rotate(135deg); -webkit-transform:rotate(135deg); transform:rotate(135deg); top: 11px; } #close {float:right;display:inline-block;padding:2px 5px; color:white;}#close:hover {float:right;display:inline-block;padding:2px 5px;color:#fff; cursor: pointer;}#bannerBtn1{margin-left:20px;} @media only screen and (max-width: 638px){ #bannerBtn1{margin-left:0px;}}</style>");
+$("body").append("<style>.dd-button { position: absolute; content: ''; width: 13px; height: 13px; border-top: 3px solid #444; border-right: 3px solid #444; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 2px; left: 8px; top: 10px; transition:0.3s ease; border-color:white;}.dd-main { border: 2px solid #666;width: 34px;height: 34px;position: relative;border-radius: 100%;box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;border-color: white;margin: 0vh auto 0;margin-bottom: -18px;margin-top: -18px;z-index: 2;background: #464343;}.dd-button.down { -moz-transform:rotate(135deg); -webkit-transform:rotate(135deg); transform:rotate(135deg); top: 11px; } #close {float:right;display:inline-block;padding:5px 10px; color:white;}#close:hover {float:right;display:inline-block;padding:2px 5px;color:#fff; cursor: pointer;}#bannerBtn1{margin-left:20px;} @media only screen and (max-width: 638px){ #bannerBtn1{margin-left:0px;}}</style>");
 	
     clearInterval(imginsert)
 }
